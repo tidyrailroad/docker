@@ -3,4 +3,5 @@ RUN \
     apk update && \
     apk upgrade && \
     apk add docker
-ENTRYPOINT docker
+ENTRYPOINT ["docker"]
+CMD ["images"]
